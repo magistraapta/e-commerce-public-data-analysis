@@ -5,11 +5,9 @@ This project is a submission from Dicoding "Belajar Analysis Data dengan Python"
 ## Installation
 1. Clone this repository to your local machine:
 ```
-git clone https://github.com/mhdhfzz/data-analyst-dicoding.git
+git clone https://github.com/magistraapta/e-commerce-public-data-analysis
 ```
 2. Go to the project directory
-```
-cd data-analyst-dicoding
 ```
 3. Install the required Python packages by running:
 ```
