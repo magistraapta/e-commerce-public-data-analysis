@@ -52,9 +52,29 @@ sns.barplot(x=delivery_status.index,
     palette=colors
 )
 
+
 plt.title("Successful Delivery", fontsize=15)
 plt.xlabel("Delivery status")
 plt.ylabel("Count")
 plt.xticks(fontsize=12)
+plt.show()
+st.pyplot(plt)
+
+st.header(
+    """
+    Location with the most customers
+    """
+)
+
+
+customer = pd.read_csv('datasets/customers_dataset.csv')
+geolocation = pd.read_csv('datasets/geolocation_dataset.csv')
+
+customers_location = customer.merge(geolocation,left_on='customer_zip_code_prefix',right_on='geolocation_zip_code_prefix',how='inner')
+brazil = mpimg.imread('brazil-map.jpeg')
+ax = customers_location.plot(kind="scatter", x="geolocation_lng", y="geolocation_lat", figsize=(10,10), alpha=0.3,s=0.3,c='green')
+plt.axis('off')
+plt.imshow(brazil, extent=[-73.98283055, -33.8,-33.75116944,5.4])
+plt.title('Location with the most customer')
 plt.show()
 st.pyplot(plt)
