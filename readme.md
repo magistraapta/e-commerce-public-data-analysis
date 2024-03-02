@@ -16,6 +16,13 @@ cd e-commerce-public-data-analysis
 pip install -r requirements.txt
 ```
 ## Access the dashboard
+```
+cd e-commerce-public-data-analysis
+```
+```
+streamlit run dashboard.py
+```
+
 Access the dashboard in your web browser at `http://localhost:8501`.
 ## Datasets
 The datases used in this project is from: [Belajar Analisis Data dengan Python's Final Project](https://drive.google.com/file/d/1MsAjPM7oKtVfJL_wRp1qmCajtSG1mdcK/view) offered by [Dicoding](https://www.dicoding.com/).
