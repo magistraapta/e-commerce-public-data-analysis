@@ -20,7 +20,7 @@ pip install -r requirements.txt
 cd e-commerce-public-data-analysis
 ```
 ```
-streamlit run dashboard.py
+streamlit run streamlit.py
 ```
 
 Access the dashboard in your web browser at `http://localhost:8501`.
