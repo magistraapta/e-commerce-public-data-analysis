@@ -9,6 +9,8 @@ git clone https://github.com/magistraapta/e-commerce-public-data-analysis
 ```
 2. Go to the project directory
 ```
+cd e-commerce-public-data-analysis
+```
 3. Install the required Python packages by running:
 ```
 pip install -r requirements.txt
